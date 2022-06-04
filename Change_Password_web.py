@@ -258,7 +258,9 @@ def change_password_list():
         print(f'\n{Error}. {usernames} {req_change_password.text}')
         Error+=1
 if __name__ == '__main__':
-    choose = input("""
+    def begin():
+
+        choose = input("""
 
 1. Change paswword one username 
 
@@ -267,11 +269,11 @@ if __name__ == '__main__':
 
 
 Please choose one of them: """)
-    if choose == "1":
-        login_one()
-    elif choose == "2":
-        login_list()
-    else:
-        os.system('cls||clear')
-        choose <="3"
-        input("Choose 1 or 2 Please")
+        if choose == "1":
+            login_one()
+        elif choose == "2":
+            login_list()
+        else:
+            os.system('cls||clear')
+            begin()
+    begin()
